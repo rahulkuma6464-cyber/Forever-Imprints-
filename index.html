@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forever Imprints | Custom Frames</title>
+<meta name="description" content="Forever Imprints - Beautiful custom frame designs. Send your requirements and get in touch.">
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#faf7f2;color:#241d18}
+header{position:sticky;top:0;z-index:5;background:#fffaf4dd;backdrop-filter:blur(10px);border-bottom:1px solid #eadfD2}
+nav{max-width:1100px;margin:auto;padding:16px 20px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:23px;font-weight:800;letter-spacing:.5px}.logo span{font-weight:400}
+nav a{color:#241d18;text-decoration:none;margin-left:18px;font-size:14px}
+.hero{max-width:1100px;margin:auto;padding:75px 20px 55px;display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:center}
+.badge{display:inline-block;background:#eee1d2;padding:8px 13px;border-radius:30px;font-size:13px}
+h1{font-size:clamp(42px,7vw,72px);line-height:.98;margin:18px 0}
+.hero p{font-size:18px;line-height:1.6;color:#675b52;max-width:600px}
+.btn{display:inline-block;border:0;border-radius:12px;padding:14px 20px;background:#241d18;color:white;text-decoration:none;font-weight:700;cursor:pointer;margin-top:10px}
+.hero-card{min-height:360px;border-radius:28px;background:linear-gradient(145deg,#e9dccb,#c8a985);display:flex;align-items:center;justify-content:center;box-shadow:0 20px 60px #6c513525}
+.mock-frame{width:72%;aspect-ratio:4/5;background:#fff;padding:12px;box-shadow:0 12px 35px #0003;display:flex;align-items:center;justify-content:center}
+.mock-inner{width:100%;height:100%;border:1px solid #b99b73;display:flex;align-items:center;justify-content:center;text-align:center;font-family:Georgia;font-size:27px;padding:20px}
+section{max-width:1100px;margin:auto;padding:55px 20px}section h2{text-align:center;font-size:34px;margin:0 0 10px}section .sub{text-align:center;color:#75695f;margin-bottom:30px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:white;border:1px solid #eadfd4;border-radius:18px;overflow:hidden;box-shadow:0 8px 25px #3a2a1a0b}
+.card-img{height:260px;background:#e9e1d7;display:flex;align-items:center;justify-content:center;color:#6f6257;font-family:Georgia;font-size:24px}
+.card-body{padding:17px}.card-body h3{margin:0 0 6px}.card-body p{margin:0;color:#75695f;font-size:14px}
+.form-wrap{max-width:700px;margin:auto;background:white;border:1px solid #eadfd4;border-radius:22px;padding:25px;box-shadow:0 12px 35px #3a2a1a0d}
+form{display:grid;gap:14px}label{font-size:13px;font-weight:700}input,select,textarea{width:100%;padding:13px;border:1px solid #d9cec3;border-radius:11px;background:#fff;font:inherit}textarea{min-height:120px;resize:vertical}
+.status{display:none;margin-top:12px;padding:12px;border-radius:10px;background:#eef6ed;color:#315c32}
+footer{text-align:center;padding:30px 20px;color:#75695f;border-top:1px solid #eadfd4}
+@media(max-width:750px){.hero{grid-template-columns:1fr;padding-top:45px}.grid{grid-template-columns:1fr 1fr}.card-img{height:210px}nav a{margin-left:10px}}
+@media(max-width:500px){.grid{grid-template-columns:1fr}.hero-card{min-height:300px}}
+</style>
+</head>
+<body>
+<header><nav><div class="logo">Forever <span>Imprints</span></div><div><a href="#designs">Designs</a><a href="#enquire">Enquire</a></div></nav></header>
+
+<main>
+<section class="hero">
+<div>
+<span class="badge">Custom Frame Designs</span>
+<h1>Make every memory an imprint.</h1>
+<p>Explore our frame designs and send your requirements. Forever Imprints will get back to you with the details.</p>
+<a class="btn" href="#designs">View Designs</a>
+<a class="btn" href="#enquire" style="background:#8a6a49;margin-left:7px">Enquire Now</a>
+</div>
+<div class="hero-card"><div class="mock-frame"><div class="mock-inner">YOUR<br>MEMORY<br>HERE</div></div></div>
+</section>
+
+<section id="designs">
+<h2>Our Frame Designs</h2><p class="sub">Replace these sample cards with your own frame photos.</p>
+<div class="grid" id="designGrid">
+<div class="card"><div class="card-img">Frame Design 01</div><div class="card-body"><h3>Classic Memory</h3><p>Elegant custom frame</p></div></div>
+<div class="card"><div class="card-img">Frame Design 02</div><div class="card-body"><h3>Premium Portrait</h3><p>Personalised photo frame</p></div></div>
+<div class="card"><div class="card-img">Frame Design 03</div><div class="card-body"><h3>Couple Special</h3><p>Made for special memories</p></div></div>
+</div>
+</section>
+
+<section id="enquire">
+<h2>Send Your Requirement</h2><p class="sub">Your details will be sent to Forever Imprints privately.</p>
+<div class="form-wrap">
+<form id="leadForm">
+<label>Name<input name="name" required placeholder="Your name"></label>
+<label>Mobile Number<input name="phone" required type="tel" inputmode="numeric" placeholder="10-digit mobile number"></label>
+<label>Gmail / Email<input name="email" required type="email" placeholder="you@gmail.com"></label>
+<label>City<input name="city" placeholder="Delhi / Gurgaon / Noida / Faridabad"></label>
+<label>Interested Design<select name="design"><option>Classic Memory</option><option>Premium Portrait</option><option>Couple Special</option><option>Other</option></select></label>
+<label>Your Requirement<textarea name="message" placeholder="Tell us what you need..."></textarea></label>
+<button class="btn" type="submit">Submit Enquiry</button>
+<div class="status" id="status">Thank you! Your enquiry has been received.</div>
+</form>
+</div>
+</section>
+</main>
+<footer>© 2026 Forever Imprints • Custom Frame Designs</footer>
+
+<script>
+/*
+IMPORTANT:
+1) Create a Google Apps Script endpoint (instructions in README.txt).
+2) Paste its URL below.
+3) Until you add the URL, this demo stores the lead only in this browser.
+*/
+const FORM_ENDPOINT = "PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
+const form = document.getElementById("leadForm");
+const status = document.getElementById("status");
+form.addEventListener("submit", async (e)=>{
+  e.preventDefault();
+  const data = Object.fromEntries(new FormData(form).entries());
+  if (FORM_ENDPOINT.startsWith("PASTE_")) {
+    const leads = JSON.parse(localStorage.getItem("foreverImprintsLeads") || "[]");
+    leads.push({...data, submittedAt:new Date().toISOString()});
+    localStorage.setItem("foreverImprintsLeads", JSON.stringify(leads));
+    status.textContent = "Demo mode: enquiry saved on this device. Connect the Google Apps Script endpoint to receive leads privately.";
+    status.style.display="block"; form.reset(); return;
+  }
+  try {
+    await fetch(FORM_ENDPOINT,{method:"POST",mode:"no-cors",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)});
+    status.textContent="Thank you! Your enquiry has been received.";
+    status.style.display="block"; form.reset();
+  } catch(err) {
+    status.textContent="Could not send right now. Please try WhatsApp.";
+    status.style.display="block";
+  }
+});
+</script>
+</body>
+</html>
